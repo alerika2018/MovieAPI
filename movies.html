@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bring the Magic Home!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/movies.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo" src="images/logo.png" alt="Bring the Magic Home">
+        </div>
+        <div class="menu menuMovies">
+            <div class="menuItem menu1"><a href="home.html">Home</a></div>
+            <div class="menuItem menu2"><a href="movies.html">Movies</a></div>
+            <div class="menuItem menu3"><a href="tv.html">TV Shows</a></div>
+        </div>
+
+        <div class="filters">
+            <div class="filtersGrid">
+                <div class="title">
+                    <h2>Movies</h2>
+                    <hr>
+                </div>
+                <div class="generes">
+                    <!-- <h3>Generes<h3> -->
+                    <label>Generes</label>
+                    <select name="" id="ddlGeneresList" class="textBox size">
+                        <option value="0">Select</option>
+                    </select>
+                </div>
+                <div class="year_release">
+                    <label>Release year</label>
+                    <input type="number" min="1900" max="2022" step="1"  id="txtReleaseDate" class="textBox size" placeholder="release year">
+                </div>
+                <div class="submit">
+                    <button id="btnSearchMovies" class="button">Search</button>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <br><br>
+    <main>
+        <div class="movies">
+            <h1>In Theatres Now!</h1>
+            <hr>            
+            <div id="moviesContainer"></div>                
+            <br>            
+        </div>
+        <br>
+        <div id="movieVideo" class="showVideo"></div>
+        <br> 
+        <div id="filteredMovies" >
+            <h1></h1>
+            <!-- <hr id="lineFilteredMovies" visibility = "hidden">            -->
+            <div id="filteredMoviesContainer"></div>                
+            <br>
+        </div>
+    </main>
+    <footer>
+        <div class="footerLeft">
+            Copyright © Magic Home - 2021
+            <br>
+            ©TMDb - Data Source: The Movie Db - For Academic, Non-Commercial Use
+        </div>
+        <div class="footerRight">
+            <img class="mediaImg" src="images/media.png">
+        </div>
+    </footer>
+</body>
+</html>
