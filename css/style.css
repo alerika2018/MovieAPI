@@ -1,1 +1,347 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 99.5%;
+    background-color: black;
+}
+
+hr{
+    width: 95%;
+    height: 4px;
+    background-color: #F0AB0C;
+}
+
+h1{
+    font-family: Hello Sunshine Marker;
+    letter-spacing: 3px;
+    color: #A68538;
+    font-size: 36pt;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    color: #F0AB0C;
+    font-size: 18pt;
+}
+h3{
+    color: #A68538;
+    font-size: 18pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 16pt;
+}
+
+/*HEADER ******************************/
+header{
+    width: 99%;
+    min-height: 270px;
+    display: grid;    
+    grid-template-columns: 30% 70%; /*repeat(2,50%);*/
+    grid-template-rows: 1fr 2fr;
+}
+.logo{
+    padding-left: 30px;
+    padding-top: 20px;
+    grid-column: 1/2;
+    grid-row:1/3;
+}
+.filters{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid #2148A3;
+    border-radius: 20px;
+    padding: 20px;
+}
+.filtersGrid{
+    display: grid;
+    width: 100%; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding-left: 25px;
+    padding-right: 25px;    
+}
+.filtersTv{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid #2148A3;
+    border-radius: 20px;
+   
+}
+.filtersGridTv{
+    display: grid;
+    width: 100%; 
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(2,1fr);
+    padding-left: 25px;
+    padding-right: 25px;    
+}
+.searchTv{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.submitTv{
+    grid-column: 2/3;
+    grid-row:  2/3;
+    justify-self:left;
+    align-self: center;
+}
+.title{
+    grid-column: 1/4;
+    grid-row: 1/2;    
+}
+/* GENERES, YEAR_RELEASE AND SUBMIT for MOVIE PAGE*/ 
+.generes{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+}
+.year_release{
+    grid-column: 2/3;
+    grid-row:  2/3;
+    justify-self: center;
+}
+.submit{
+    grid-column: 3/4;
+    grid-row:  2/3;
+    justify-self: center;
+}
+/*******************************************/
+/*********************************************
+
+/*ELEMENTS ******************************/
+.button{
+    height: 40px;
+    width: 200px;
+    background-color: #F0AB0C;
+    border-radius: 20px;
+    font-family: Hello Sunshine Marker;
+    letter-spacing: 3px;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #2148A3;
+}
+.buttonX{
+    background-color: #F0AB0C;
+    font-weight: bold;
+    color: #2148A3;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    
+}
+
+.textBox{    
+    background-color: #94B4FF;
+    border-radius: 0 20px;
+    color: #2148A3;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+ .size{
+    height: 40px;
+    width: 170px;
+}
+.sizeSearchTv{
+    height: 40px;
+    width: 600px;
+}
+option{
+    background-color: whitesmoke;
+}
+input[type='radio']{
+    transform: scale(2); 
+}
+
+label{
+    color: #A68538;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+/***********************************************/
+
+/*MENU ******************/
+.menu{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+.menuMovies{
+    grid-row: 1/2;
+}
+.menuItem a{
+    font-family: Hello Sunshine Marker;
+    letter-spacing: 3px;
+    color: #F0AB0C;
+    font-size: 36pt;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.menuItem a:hover{
+    color: whitesmoke;
+}
+/********************************************/
+
+
+/*PAGE HOME*/
+.movies, .tv{
+    width: 100%;
+    min-height: 550px;
+    background-color: #94B4FF;
+}
+
+.space{
+    width: 100%;
+    height: 10px;
+}
+/*****************************/
+
+/*PAGE HOME AND MOVIES*/
+.moviesContainer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+/****************************/
+
+/*PAGE MOVIES**************************/
+
+.showVideo{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+#filteredMovies{
+    display: flex;
+    flex-direction: column;    
+}
+.divPages{
+    align-self: center;
+}
+/************************************/
+
+/*PAGE TV SHOWS***********************/
+.pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pagesItems{
+    flex: 0 1 30%;    
+}
+
+.tvDescriptionContainer{
+    margin: 0 auto;;
+    width: 80%;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100%;
+}
+.tvDescriptionC_item1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    justify-self: center;
+}
+.tvDescriptionC_item2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: white;
+    padding: 35px;
+}
+#ptvDescription{
+    color: white;   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+/*************************************/
+
+/*TABLE*/
+.table{
+    width: 80%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.rowHead{
+    width:  2fr;
+    background-color: #A68538;
+    height: 50px;    
+    font-weight: bold;
+}
+.row{
+    border-bottom: 1px solid #A68538;
+    height:35px;
+}
+/*********************************/
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding:50px;
+    background-color: #2148A3;
+}
+.footerRight{
+    flex-basis: auto;
+}
+.footerLeft{
+    color: #A68538;
+    flex-basis: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+.mediaImg{
+    max-width: 70%;
+    max-height: 70%;
+}
+/************************************/
+
+/* Grid style */
+.gridChildrenDynamic{
+    max-width: 200px; 
+    height: 300px; 
+    box-shadow: 10px 10px 5px #09004C;
+}
+
+.gridParentDynamic{
+    width: 80%; 
+    margin: 0 auto; 
+    display:grid; 
+    row-gap: 25px; 
+    height: 400px; 
+    overflow-y: auto;
+}
+.videoTVFrame{
+    width: 720px;
+    height: 315px;
+    margin: 0 auto;
+}
+.videoMovieFrame{
+    width: 80%;
+    height: 315px;
+    margin: 0 auto;
+}
+
+
 
